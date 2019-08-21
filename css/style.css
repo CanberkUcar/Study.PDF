@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.btn {
+    background: tomato;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.page-no {
+    margin-left: 1rem;
+}
+
+.error {
+    background: aqua;
+    color: #333;
+    padding: 1rem;
+}

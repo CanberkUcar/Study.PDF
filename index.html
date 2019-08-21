@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Study.PDF</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/57a3c2a91f.js"></script>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <button class="btn" id="prev-page">
+            <i class="fas fa-arrow-circle-left"></i> PrevPage
+        </button>
+
+        <button class="btn" id="next-page">
+            <i class="fas fa-arrow-circle-right"></i> NextPage
+        </button>
+
+        <span class="page-no">
+            Page <span id="page-num"></span> / <span id="page-count"></span>
+        </span>
+
+    </div>
+
+    <canvas id="pdf-render"></canvas>
+
+    <!-- PDF.js from Mozilla github Page-->
+    <script src="js/pdf.js"></script>
+    <script src="js/pdf.worker.js"></script>
+    <script src="js/main.js" async defer></script>
+</body>
+
+</html>
