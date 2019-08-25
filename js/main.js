@@ -1,6 +1,6 @@
-const url = '../docs/a.pdf'; // Constant of where the pdf is
+const url = '../docs/b.pdf'; // Constant of where the pdf is
 
-/* Varıables. --------------------------------------------- */
+/* Variables. --------------------------------------------- */
 let pdfDoc = null,
     pageNum = 1,
     pageIsRendering = false,
@@ -84,6 +84,7 @@ pdfjsLib.getDocument(url).promise.then(PdfDoc => {
         document.getElementById('page-count').textContent = pdfDoc.numPages;
         renderPage(pageNum);
     })
+
     .catch(err => {
         // Display error.
         const div = document.createElement('div');
@@ -92,7 +93,7 @@ pdfjsLib.getDocument(url).promise.then(PdfDoc => {
         document.querySelector('body').insertBefore(div, canvas);
 
         // Removing the top bar on Error.
-        document.querySelector('.top-bar').getElementsByClassName.display = 'none';
+        document.querySelector('.top-bar').style.display = 'none';
     });
 
 // Button Events. 

@@ -4,21 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Study.PDF</title>
-    <meta name="description" content="">
+    <meta name="description" content="This a basic pdf reader for I did to study on my exams.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Canberk Ucar">
+
+    <!-- CSS FILE -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/57a3c2a91f.js"></script>
 </head>
 
 <body>
 
     <div class="top-bar">
+        <!-- Top bar menu navigation. -->
         <button class="btn" id="prev-page">
-            <i class="fas fa-arrow-circle-left"></i> PrevPage
+            <i class="fas fa-arrow-circle-left"></i>
+            Prev
         </button>
-
         <button class="btn" id="next-page">
-            <i class="fas fa-arrow-circle-right"></i> NextPage
+            <i class="fas fa-arrow-circle-right"></i>
+            Next
         </button>
 
         <span class="page-no">
@@ -27,9 +34,12 @@
 
     </div>
 
-    <canvas id="pdf-render"></canvas>
+    <!-- Centering the pdf. -->
+    <div class="container">
+        <canvas id="pdf-render"></canvas>
+    </div>
 
-    <!-- PDF.js from Mozilla github Page-->
+    <!-- PDF.js from Mozilla github Page -->
     <script src="js/pdf.js"></script>
     <script src="js/pdf.worker.js"></script>
     <script src="js/main.js" async defer></script>
